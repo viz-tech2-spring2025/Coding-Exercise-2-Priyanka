@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    d3.csv('/data/forests.csv',  d3.autoType)
+    d3.csv('/data/Ganga_Pollution.csv',  d3.autoType)
       .then((loadedData) => {
         console.log('Data loaded:', loadedData);
         setData(loadedData);
